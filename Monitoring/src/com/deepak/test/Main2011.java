@@ -59,7 +59,8 @@ public class Main2011 {
 
             String sCurrentLine;
 
-            br = new BufferedReader(new FileReader("/home/deepak/response.html"));
+            String fileLocation = System.getProperty("user.home") + System.getProperty("file.separator") + "response.html";
+            br = new BufferedReader(new FileReader(fileLocation));
 
             while ((sCurrentLine = br.readLine()) != null) {
 

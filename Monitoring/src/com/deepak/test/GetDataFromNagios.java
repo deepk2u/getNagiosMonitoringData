@@ -61,8 +61,8 @@ public class GetDataFromNagios {
         System.out.println(result);
 
         try {
-
-            File file = new File("/home/deepak/temp.html");
+            String fileLocation = System.getProperty("user.home") + System.getProperty("file.separator") + "temp.html";
+            File file = new File(fileLocation);
 
             // if file doesnt exists, then create it
             if (!file.exists()) {
