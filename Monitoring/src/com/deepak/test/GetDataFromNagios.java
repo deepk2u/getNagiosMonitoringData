@@ -16,7 +16,7 @@ import javax.net.ssl.SSLContext;
 import javax.net.ssl.TrustManager;
 
 public class GetDataFromNagios {
-    public static void main(String[] args) throws IOException, InterruptedException {
+    public static void execute() throws IOException, InterruptedException {
 
         String https_url = "https://122.160.150.198/nagios/cgi-bin/status.cgi?host=all";
         URL cpUrl = new URL(https_url);
@@ -79,15 +79,5 @@ public class GetDataFromNagios {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        
-        //String command = "sh js-beautify --html temp.html > response.html";
-        // once this shell script gets executed automatically, whole process will be automated
-        
-        //Process p = Runtime.getRuntime().exec("/home/deepak/command.sh");
-        
-        //ProcessBuilder pb = new ProcessBuilder("/home/deepak/command.sh");
-        //pb.directory(new File("/home/deepak"));
-        //Process p = pb.start();
-        //System.out.println(p.waitFor());
     }
 }

@@ -11,7 +11,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class WriteReportToExcel {
 
-    public static void main(String[] args) {
+    public static void writeReportToExcel() {
 
         Main2011 main2011 = new Main2011();
         main2011.run();
